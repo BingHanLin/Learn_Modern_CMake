@@ -1,0 +1,13 @@
+cd ${0%/*} ||exit 1     # Run from this directory
+
+mkdir build             # Create a build directory
+#cd build                # Go to build directory
+
+# Generate a Project Buildsystem
+cmake ..                # Config project
+cmake -S . -B build
+git
+# Build a Project
+cmake --build .         # Build project
+
+# Install a Project
