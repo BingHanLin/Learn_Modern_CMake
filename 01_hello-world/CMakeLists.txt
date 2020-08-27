@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.15.0)
+
+project(hello-world LANGUAGES CXX)
+
+message(STATUS "This is BINARY DIR " ${PROJECT_BINARY_DIR})
+message(STATUS "This is SOURCE DIR " ${PROJECT_SOURCE_DIR})
+
+set(SOURCE_FILES ${PROJECT_SOURCE_DIR}/main.cpp)
+
+add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES})
