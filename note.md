@@ -8,5 +8,9 @@ https://cmake.org/cmake/help/v3.15/manual/cmake.1.html
 
 https://chenxiaowei.gitbook.io/cmake-cookbook/
 
+https://cliutils.gitlab.io/modern-cmake/chapters/basics/
+variables.html
 
 **generator expression
+
+**PRIVATE PUBLIC INTERFACE  
