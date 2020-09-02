@@ -7,10 +7,6 @@ if( CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT )
   set(CMAKE_INSTALL_PREFIX "${CMAKE_BINARY_DIR}/install" CACHE STRING "The path to use for make install" FORCE)
 endif()
 
-if (WIN32)
-  set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS 1)
-endif()
-
 ############################################################
 # Create a library
 ############################################################

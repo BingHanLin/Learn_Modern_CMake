@@ -4,12 +4,12 @@ project(static-libray)
 
 add_library(message
   STATIC
-    ${PROJECT_SOURCE_DIR}/lib/message.cpp
+    ${PROJECT_SOURCE_DIR}/messageLib/message.cpp
 )
 
 target_include_directories(message 
-  PUBLIC
-    ${PROJECT_SOURCE_DIR}/lib
+  INTERFACE
+    ${PROJECT_SOURCE_DIR}/messageLib
 )
 
 set(SOURCES ${PROJECT_SOURCE_DIR}/src/main.cpp)
