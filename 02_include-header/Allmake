@@ -5,7 +5,7 @@ cd ${0%/*} ||exit 1
 mkdir build             
 
 # Generate a project buildsystem (a modern way)
-cmake -H. -S. -Bbuild  
+cmake -S. -Bbuild  
 
 # Build a project
 cmake --build build

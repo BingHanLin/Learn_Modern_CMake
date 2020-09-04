@@ -5,7 +5,7 @@ cd ${0%/*} ||exit 1
 mkdir build             
 
 # Generate a project buildsystem (a modern way)
-cmake -DCMAKE_BUILD_TYPE=Release  -H. -S. -Bbuild 
+cmake -DCMAKE_BUILD_TYPE=Release  -S. -Bbuild 
 
 # Build a project
 cmake --build build --config Release

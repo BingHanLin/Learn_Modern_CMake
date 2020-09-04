@@ -31,6 +31,6 @@
 # build files
 bin/
 build/
-_builds/
+install/
 cmake-build-debug/
 CMakeFiles/
