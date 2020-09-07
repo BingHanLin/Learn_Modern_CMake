@@ -16,6 +16,8 @@ add_library(math
         ${PROJECT_SOURCE_DIR}/src/math.cpp
 )
 
+set_target_properties(math PROPERTIES PUBLIC_HEADER ${PROJECT_SOURCE_DIR}/include/math.hpp)
+
 target_include_directories(math 
     PUBLIC
         $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
@@ -52,7 +54,7 @@ install(
     LIBRARY DESTINATION ${INSTALL_LIB_DIR}
     ARCHIVE DESTINATION ${INSTALL_LIB_DIR}
     RUNTIME DESTINATION ${INSTALL_BIN_DIR}
-	# INCLUDES DESTINATION ${INSTALL_INCLUDES_DIR}
+    PUBLIC_HEADER DESTINATION ${INSTALL_INCLUDES_DIR} 
 )
 
 install(
