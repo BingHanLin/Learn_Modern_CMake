@@ -12,7 +12,7 @@ add_library(message
 
 target_include_directories(message 
   PUBLIC
-    ${PROJECT_SOURCE_DIR}/
+    ${PROJECT_SOURCE_DIR}/messageLib
 )
 
 set(SOURCE_FILE ${PROJECT_SOURCE_DIR}/src/main.cpp)
