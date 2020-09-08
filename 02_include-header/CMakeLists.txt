@@ -5,14 +5,13 @@ project(include-header)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
 
-set(SOURCES
+set(SOURCE_FILE
   ${PROJECT_SOURCE_DIR}/src/main.cpp
-  ${PROJECT_SOURCE_DIR}/src/message.cpp
 )
 
-add_executable(${CMAKE_PROJECT_NAME} ${SOURCES})
+add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILE})
 
 target_include_directories(${CMAKE_PROJECT_NAME} 
-  PRIVATE
+  PUBLIC
     ${PROJECT_SOURCE_DIR}/include
 )

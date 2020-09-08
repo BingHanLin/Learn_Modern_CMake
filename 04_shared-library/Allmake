@@ -3,10 +3,12 @@ cd ${0%/*} ||exit 1
 
 # Generate a project buildsystem
 cmake -DCMAKE_BUILD_TYPE=Release  -S. -Bbuild 
-
+ 
 # Build a project
 cmake --build build --config Release
 
 # Install a project
 cmake --install build --config Release
+
+
 

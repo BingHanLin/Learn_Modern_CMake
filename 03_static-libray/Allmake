@@ -1,15 +1,14 @@
 # Run from this directory
 cd ${0%/*} ||exit 1     
 
-# Create a build directory
-mkdir build             
-
-# Generate a project buildsystem (a modern way)
-cmake -S. -Bbuild  
+# Generate a project buildsystem
+cmake -DCMAKE_BUILD_TYPE=Release  -S. -Bbuild 
 
 # Build a project
-cmake --build build
+cmake --build build --config Release
 
 # Install a project
-cmake --Install build
+cmake --install build --config Release
+
+
 

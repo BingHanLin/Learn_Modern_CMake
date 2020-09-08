@@ -8,7 +8,7 @@ mkdir build
 cd build                
 
 # Generate a project buildsystem
-cmake -G "Visual Studio 16 2019" ..               
+cmake ..               
 
 # Build a project
-cmake --build .        
+cmake --build .         
