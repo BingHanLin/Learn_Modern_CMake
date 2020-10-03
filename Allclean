@@ -1,1 +1,1 @@
-find . -type d -name build -delete
+find . -type d -name build -prune -exec rm -rf {} \;
