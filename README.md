@@ -5,13 +5,13 @@ A simple repository which contains some modern CMake configurations for differen
 These example have been tested on windows 10 with CMake v3.18+.
 
 ## Build All Examples
-***
+
 * Run `Allmake` in top directory.
 
 ## Clean All Examples
-***
+
 * Run `Allclean` in top directory.
 
 ## Reference:
-***
+
 * [explainshell.com](https://explainshell.com/)
