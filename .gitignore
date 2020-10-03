@@ -34,3 +34,4 @@ build/
 install/
 cmake-build-debug/
 CMakeFiles/
+Testing/

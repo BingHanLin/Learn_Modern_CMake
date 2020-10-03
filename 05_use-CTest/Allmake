@@ -13,3 +13,9 @@ cmake   -S. -Bbuild \
 # Build a project
 cmake --build build --config Release
 
+# Test a project
+cd build
+ctest -C Release
+cd ..
+
+
