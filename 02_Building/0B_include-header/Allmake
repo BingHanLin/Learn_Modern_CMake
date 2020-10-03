@@ -1,8 +1,7 @@
 # Run from this directory
 cd ${0%/*} ||exit 1     
 
-# Generate a project buildsystem
-# cmake -S. -Bbuild -G "MinGW Makefiles"
+# Generate a project buildsystem, "MinGW Makefiles" for MinGW buildsysteim
 cmake -S. -Bbuild -G "Visual Studio 16 2019"
 
 # Build a project

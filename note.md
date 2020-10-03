@@ -12,6 +12,8 @@ https://cliutils.gitlab.io/modern-cmake/chapters/basics/
 
 https://gitlab.kitware.com/cmake/community/-/wikis/doc/tutorials/Exporting-and-Importing-Targets
 
+https://github.com/ttroy50
+
 variables.html
 
 **generator expression

@@ -1,1 +1,5 @@
+# Run from this directory
+cd ${0%/*} ||exit 1  
+
 find . -type d -name build -prune -exec rm -rf {} \;
+find . -type d -name bin -prune -exec rm -rf {} \;
