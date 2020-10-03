@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.15.0)
+cmake_minimum_required(VERSION 3.18.0)
 
 project(installing)
 
@@ -14,14 +14,14 @@ endif()
 ############################################################
 # Create a library
 ############################################################
-add_library(message
+add_library(msg
   SHARED
-    ${PROJECT_SOURCE_DIR}/messageLib/message.cpp
+    ${PROJECT_SOURCE_DIR}/message/message.cpp
 )
 
-target_include_directories(message 
+target_include_directories(msg 
   PUBLIC
-    ${PROJECT_SOURCE_DIR}/messageLib
+    ${PROJECT_SOURCE_DIR}/message
 )
 
 ############################################################
@@ -31,7 +31,7 @@ set(SOURCE_FILE ${PROJECT_SOURCE_DIR}/src/main.cpp)
 
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILE})
 
-target_link_libraries(${CMAKE_PROJECT_NAME} message)
+target_link_libraries(${CMAKE_PROJECT_NAME} msg)
 
 ############################################################
 # Install
@@ -41,7 +41,7 @@ install (TARGETS ${CMAKE_PROJECT_NAME}
     DESTINATION bin)
 
 # Library
-install (TARGETS message
+install (TARGETS msg
     LIBRARY DESTINATION lib
     RUNTIME DESTINATION bin)
 

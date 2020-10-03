@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.15.0)
+cmake_minimum_required(VERSION 3.18.0)
 
 project(useMathLib)
 
@@ -12,6 +12,6 @@ message("mathLib_FOUND: ${mathLib_FOUND}")
 
 
 
-add_executable(${CMAKE_PROJECT_NAME} ${PROJECT_SOURCE_DIR}/main.cpp)
+add_executable(${CMAKE_PROJECT_NAME} ${PROJECT_SOURCE_DIR}/src/main.cpp)
 
 target_link_libraries(${CMAKE_PROJECT_NAME} math)

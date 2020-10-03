@@ -18,7 +18,9 @@ cmake --install build/mathLib --config Release
 #==================================================
 
 # Generate a project buildsystem (a modern way)
-cmake -SuseMathLib -Bbuild/useMathLib -DCMAKE_BUILD_TYPE=Release -DmathLib_DIR="$PWD/install/lib/cmake"
+cmake   -SuseMathLib -Bbuild/useMathLib \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DmathLib_DIR="$PWD/install/lib/cmake"
 
 # Build a project
 cmake --build build/useMathLib --config Release
