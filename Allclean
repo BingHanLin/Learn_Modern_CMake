@@ -1,7 +1,14 @@
+#!/bin/bash
+
 # Run from this directory
 cd ${0%/*} ||exit 1  
 
+echo "clean build ===> done!"
 find . -type d -name build -prune -exec rm -rf {} \;
+
+echo "clean bin ===> done!"
 find . -type d -name bin -prune -exec rm -rf {} \;
+
+echo "clean install ===> done!"
 find . -type d -name install -prune -exec rm -rf {} \;
 

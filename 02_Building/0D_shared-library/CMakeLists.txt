@@ -11,12 +11,12 @@ endif()
 
 add_library(msg
   SHARED
-    ${PROJECT_SOURCE_DIR}/messageLib/message.cpp
+    ${PROJECT_SOURCE_DIR}/message/message.cpp
 )
 
 target_include_directories(msg 
   PUBLIC
-    ${PROJECT_SOURCE_DIR}/messageLib
+    ${PROJECT_SOURCE_DIR}/message
 )
 
 set(SOURCE_FILE ${PROJECT_SOURCE_DIR}/src/main.cpp)
