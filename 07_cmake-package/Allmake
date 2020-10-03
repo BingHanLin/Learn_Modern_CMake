@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Run from this directory
 cd ${0%/*} ||exit 1     
 
