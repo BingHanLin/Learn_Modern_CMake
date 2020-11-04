@@ -10,9 +10,15 @@ https://chenxiaowei.gitbook.io/cmake-cookbook/
 
 https://cliutils.gitlab.io/modern-cmake/chapters/basics/
 
+https://cliutils.gitlab.io/modern-cmake/chapters/packages/MPI.html
+
+
 https://gitlab.kitware.com/cmake/community/-/wikis/doc/tutorials/Exporting-and-Importing-Targets
 
 https://github.com/ttroy50
+
+target_sources()
+https://crascit.com/2016/01/31/enhanced-source-file-handling-with-target_sources/
 
 variables.html
 
