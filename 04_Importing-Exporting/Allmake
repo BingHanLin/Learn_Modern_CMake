@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Run from this directory
+cd ${0%/*} ||exit 1     
+
+# Create a build directory
+mkdir build             
+
+# Generate a project buildsystem (a modern way)
+cmake -SmathLib -Bbuild/mathLib -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=install
+
+# Build a project
+cmake --build build/mathLib --config Release
+
+# Install a project
+cmake --install build/mathLib --config Release
+
+#==================================================
+
+# Generate a project buildsystem (a modern way)
+cmake   -SuseMathLib -Bbuild/useMathLib \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DmathLib_DIR="$PWD/install/lib/cmake"
+
+# Build a project
+cmake --build build/useMathLib --config Release
+
