@@ -1,0 +1,11 @@
+@PACKAGE_INIT@
+
+set(basic_DIR "@basic_DIR@")
+
+include(CMakeFindDependencyMacro)
+find_dependency(basic)
+
+include("${CMAKE_CURRENT_LIST_DIR}/msgTargets.cmake")
+
+check_required_components(MathFunctions)
+

@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Run from this directory
+cd ${0%/*} ||exit 1     
+
+## Export Targets ==============================
+cd message/basic
+
+# Generate a project buildsystem
+cmake -DCMAKE_BUILD_TYPE=Release  -S. -Bbuild -DCMAKE_INSTALL_PREFIX=install
+
+# Build a project
+cmake --build build --config Release
+
+# Install a project
+cmake --install build --config Release
+
+cd ../../
+
+# Export Targets ==============================
+cd message
+
+# Generate a project buildsystem
+cmake -DCMAKE_BUILD_TYPE=Release  -S. -Bbuild -DCMAKE_INSTALL_PREFIX=install
+
+# Build a project
+cmake --build build --config Release
+
+# Install a project
+cmake --install build --config Release
+
+cd ..
+
+## Using Targets ==============================
+
+# Generate a project buildsystem
+cmake -DCMAKE_BUILD_TYPE=Release  -S. -Bbuild
+
+# Build a project
+cmake --build build --config Release
+
+# Install a project
+cmake --install build --config Release
+
+
