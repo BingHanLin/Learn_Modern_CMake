@@ -1,0 +1,16 @@
+@PACKAGE_INIT@
+
+set(_supported_components add multiply)
+
+set(math_FOUND True)
+
+foreach(_comp ${math_FIND_COMPONENTS})
+    if(NOT _comp IN_LIST _supported_components)
+        set(math_FOUND False)
+        set(math_NOT_FOUND_MESSAGE "Unsupported component: ${_comp}")
+    endif()
+endforeach()
+
+if(math_FOUND)
+      include("${CMAKE_CURRENT_LIST_DIR}/mathTarget.cmake")
+endif()
