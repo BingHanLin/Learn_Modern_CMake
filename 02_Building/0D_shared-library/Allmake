@@ -1,14 +1,24 @@
+#!/bin/bash
+
 # Run from this directory
 cd ${0%/*} ||exit 1     
 
-# Generate a project buildsystem
-cmake -DCMAKE_BUILD_TYPE=Release  -S. -Bbuild 
- 
+# https://blog.csdn.net/10km/article/details/50525604
+# Generate a project buildsystem by MinGW
+cmake -S. -Bbuild -G "MinGW Makefiles" \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_GNUtoMS:BOOL=ON
 # Build a project
 cmake --build build --config Release
-
 # Install a project
 cmake --install build --config Release
+    
+# # Generate a project buildsystem VC
+# cmake -DCMAKE_BUILD_TYPE=Release  -S. -Bbuild 
+# # Build a project
+# cmake --build build --config Release
+# # Install a project
+# cmake --install build --config Release
 
 
 
