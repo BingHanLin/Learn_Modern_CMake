@@ -2,7 +2,7 @@
 # https://stackoverflow.com/questions/25907478/possible-to-add-an-imported-library-to-target-link-libraries-that-takes-care-of
 cmake_minimum_required(VERSION 3.18.0)
 
-project(importingLibraries)
+project(importingTargets)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
