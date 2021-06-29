@@ -20,6 +20,9 @@ https://github.com/ttroy50
 target_sources()
 https://crascit.com/2016/01/31/enhanced-source-file-handling-with-target_sources/
 
+
+https://gist.github.com/mbinna/c61dbb39bca0e4fb7d1f73b0d66a4fd1
+
 variables.html
 
 **generator expression
