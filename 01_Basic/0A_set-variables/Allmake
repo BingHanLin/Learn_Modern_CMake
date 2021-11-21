@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Run from this directory
 cd ${0%/*} ||exit 1     
 
@@ -8,7 +10,9 @@ mkdir build
 cd build                
 
 # Generate a project buildsystem
-cmake ..               
+cmake -S.. -B. \
+      -DMY_CACHE_VAR:STRING="I am a variable 7" \
+      -G "MinGW Makefiles"
 
 # Build a project
 cmake --build .         
